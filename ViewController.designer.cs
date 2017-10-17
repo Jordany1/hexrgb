@@ -27,6 +27,10 @@ namespace hexrgb
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton detailsButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel greenValueLabel { get; set; }
 
         [Outlet]
@@ -52,6 +56,11 @@ namespace hexrgb
             if (convertButton != null) {
                 convertButton.Dispose ();
                 convertButton = null;
+            }
+
+            if (detailsButton != null) {
+                detailsButton.Dispose ();
+                detailsButton = null;
             }
 
             if (greenValueLabel != null) {
